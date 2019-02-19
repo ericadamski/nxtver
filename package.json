@@ -1,0 +1,23 @@
+{
+  "name": "nxt-ver",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Eric Adamski <er.adamski@gmail.com>",
+  "repository": "git@github.com:ericadamski/nxtver.git",
+  "bin": {
+    "nxtver": "./dist/index.js"
+  },
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "build": "ncc build",
+    "start": "ncc run"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "dedent": "^0.7.0",
+    "semver": "^5.6.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.15.2"
+  }
+}

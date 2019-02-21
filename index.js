@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --inspect
 
 const dedent = require("dedent");
 const path = require("path");
